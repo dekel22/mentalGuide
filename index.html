@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>בדיקת חיבור למסד</title>
+</head>
+<body>
+  <h1>בדיקת MongoDB</h1>
+  <button onclick="testInsert()">שלח בדיקה</button>
+  <script>
+    async function testInsert() {
+      const res = await fetch('/api/test');
+      const data = await res.json();
+      alert(JSON.stringify(data));
+    }
+  </script>
+</body>
+</html>
